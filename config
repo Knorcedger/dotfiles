@@ -8,6 +8,12 @@
 		"sudo apt-get install atom",
 		"sudo apt-get install google-chrome-unstable",
 		"sudo apt-get install git",
+		"sudo apt-get install filezilla",
+		"sudo apt-get install firefox",
+		"sudo apt-get install gthumb",
+
+
+
 
 		"sudo apt-get install nodejs",
 		"echo node version:",

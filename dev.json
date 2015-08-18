@@ -1,0 +1,6 @@
+{
+	"commands": [
+		"echo node version:",
+		"node -v"
+	]
+}
