@@ -11,9 +11,7 @@
 		"sudo apt-get install filezilla",
 		"sudo apt-get install firefox",
 		"sudo apt-get install gthumb",
-
-
-
+		"sudo apt-get install skype",
 
 		"sudo apt-get install nodejs",
 		"echo node version:",
@@ -23,6 +21,8 @@
 		"npm install -g gulp",
 		"npm install -g cca",
 		"npm install -g bower",
-		"npm install -g node-inspector"
+		"npm install -g node-inspector",
+
+		"apm install sync-settings"
 	]
 }
