@@ -16,8 +16,6 @@
 		"wget -O- https://toolbelt.heroku.com/install-ubuntu.sh | sh",
 
 		"sudo apt-get install nodejs",
-		"echo node version:",
-		"node -v",
 
 		"npm install -g npm",
 		"npm install -g gulp",
