@@ -13,8 +13,6 @@
 		"sudo apt-get install gthumb",
 		"sudo apt-get install skype",
 
-		"wget -O- https://toolbelt.heroku.com/install-ubuntu.sh | sh",
-
 		"sudo apt-get install nodejs",
 
 		"npm install -g npm",
@@ -22,6 +20,8 @@
 		"npm install -g cca",
 		"npm install -g bower",
 		"npm install -g node-inspector",
+
+		"wget -O- https://toolbelt.heroku.com/install-ubuntu.sh | sh",
 
 		"apm install sync-settings"
 	]
