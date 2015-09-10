@@ -32,6 +32,8 @@ sudo npm install npm -g
 sudo npm install -g gulp
 sudo npm install -g cca
 sudo npm install -g bower
+sudo npm install -g jshint
+sudo npm install -g jscs
 sudo npm install -g node-inspector --unsafe-perm
 
 sudo wget -O- https://toolbelt.heroku.com/install-ubuntu.sh | sudo sh
