@@ -48,5 +48,5 @@ sudo wget -O- https://toolbelt.heroku.com/install-ubuntu.sh | sudo sh
 
 apm install sync-settings
 
-# restart the pc
-sudo shutdown -r 0
+# restart the pc?
+sudo echo Awesome! Restart the PC now. Do something yourself ffs!
