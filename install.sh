@@ -6,6 +6,7 @@ sudo echo Your are about to experience magic!
 sudo add-apt-repository -y ppa:'webupd8team/atom' &> /dev/null
 sudo wget -q https://dl-ssl.google.com/linux/linux_signing_key.pub -O- | sudo apt-key add -
 sudo sh -c 'echo "deb http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google-chrome.list'
+sudo add-apt-repository "deb http://archive.canonical.com/ $(lsb_release -sc) partner"
 sudo apt-get update
 
 # lets install some ubuntu software
@@ -17,6 +18,13 @@ sudo apt-get --assume-yes install firefox
 sudo apt-get --assume-yes install gthumb
 sudo apt-get --assume-yes install skype
 sudo apt-get --assume-yes install curl
+
+# install zsh and oh-my-zsh
+sudo apt-get --assume-yes install zsh
+sudo apt-get --assume-yes install git-core
+wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | zsh
+chsh -s `which zsh`
+
 # this is used to install node 0.12
 curl -sL https://deb.nodesource.com/setup_0.12 | sudo bash -
 sudo apt-get --assume-yes install nodejs
@@ -39,3 +47,6 @@ sudo npm install -g node-inspector --unsafe-perm
 sudo wget -O- https://toolbelt.heroku.com/install-ubuntu.sh | sudo sh
 
 apm install sync-settings
+
+# restart the pc
+sudo shutdown -r 0
