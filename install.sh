@@ -34,19 +34,19 @@ sudo apt-get --assume-yes install npm
 sudo ln -s /usr/bin/nodejs /usr/bin/node
 
 # upgrade npm as well
-sudo npm install npm -g
+npm install npm -g
 
 # install some npm modules
-sudo npm install -g gulp
-sudo npm install -g cca
-sudo npm install -g bower
-sudo npm install -g jshint
-sudo npm install -g jscs
-sudo npm install -g node-inspector --unsafe-perm
+npm install -g gulp
+npm install -g cca
+npm install -g bower
+npm install -g jshint
+npm install -g jscs
+npm install -g node-inspector --unsafe-perm
 
-sudo wget -O- https://toolbelt.heroku.com/install-ubuntu.sh | sudo sh
+wget -O- https://toolbelt.heroku.com/install-ubuntu.sh | sh
 
 apm install sync-settings
 
 # restart the pc?
-sudo echo Awesome! Restart the PC now. Do something yourself ffs!
+echo Awesome! Restart the PC now. Do something yourself ffs!
