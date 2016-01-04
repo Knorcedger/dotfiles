@@ -27,7 +27,7 @@ wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - 
 chsh -s `which zsh`
 
 # install node
-curl -sL https://deb.nodesource.com/setup | sudo bash -
+curl -sL https://deb.nodesource.com/setup_5.x | sudo -E bash -
 sudo apt-get --assume-yes install nodejs
 sudo apt-get --assume-yes install npm
 
