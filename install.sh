@@ -25,8 +25,8 @@ sudo apt-get --assume-yes install git-core
 wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | zsh
 chsh -s `which zsh`
 
-# this is used to install node 0.12
-curl -sL https://deb.nodesource.com/setup_0.12 | sudo bash -
+# install node
+curl -sL https://deb.nodesource.com/setup | sudo bash -
 sudo apt-get --assume-yes install nodejs
 sudo apt-get --assume-yes install npm
 
