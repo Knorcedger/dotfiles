@@ -1,0 +1,13 @@
+[giggle]
+	main-window-maximized = true
+	main-window-geometry = 470x98+66+24
+	history-view-vpane-position = 680
+	file-view-vpane-position = 730
+	main-window-view = FileView
+[user]
+	name = Achilleas Tsoumitas
+	email = knorcedger@gmail.com
+[github]
+	user = Knorcedger
+[push]
+	default = current

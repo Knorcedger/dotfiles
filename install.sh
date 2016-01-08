@@ -2,6 +2,15 @@
 # run me by typing ./install.sh
 sudo echo Your are about to experience magic!
 
+while true; do
+	read -p "Are you Knorcedger? (y/n)" yn
+	case $yn in
+		[Yy]* ) y=1; break;;
+		[Nn]* ) y=0; break;;
+		* ) echo "Please answer yes or no.";;
+	esac
+done
+
 # add software source keys and ppas
 sudo add-apt-repository -y ppa:'webupd8team/atom' &> /dev/null
 sudo wget -q https://dl-ssl.google.com/linux/linux_signing_key.pub -O- | sudo apt-key add -
@@ -25,6 +34,17 @@ sudo apt-get --assume-yes install zsh
 sudo apt-get --assume-yes install git-core
 wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | zsh
 chsh -s `which zsh`
+
+# copy all dotfiles
+mkdir dev
+cd dev
+git clone https://github.com/Knorcedger/dotfiles
+/bin/cp -rf ~/dev/dotfiles/.zshrc ~
+/bin/cp -rf ~/dev/dotfiles/.aliases ~
+if [ "$y" = "1" ]
+then
+	/bin/cp -rf ~/dev/dotfiles/.gitconfig ~
+fi
 
 # install node
 curl -sL https://deb.nodesource.com/setup_5.x | sudo -E bash -
