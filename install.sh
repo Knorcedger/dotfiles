@@ -61,8 +61,7 @@ npm install npm -g
 npm install -g gulp
 npm install -g cca
 npm install -g bower
-npm install -g jshint
-npm install -g jscs
+npm install -g eslint-cli
 npm install -g node-inspector --unsafe-perm
 
 wget -O- https://toolbelt.heroku.com/install-ubuntu.sh | sh
