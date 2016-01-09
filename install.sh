@@ -66,6 +66,7 @@ npm install -g node-inspector --unsafe-perm
 npm install -g fixpack
 npm install -g npm-check-updates
 npm install -g package-json-to-readme
+npm install -g yo
 
 wget -O- https://toolbelt.heroku.com/install-ubuntu.sh | sh
 
