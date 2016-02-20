@@ -4,6 +4,7 @@ alias nisd='npm install --save-dev'
 alias nig='npm install -g'
 alias nr='npm run'
 alias nt='npm test'
+alias ns='npm start'
 alias nit='npm install && npm test'
 alias nf='npm cache clean && rm -rf node_modules && npm install'
 
