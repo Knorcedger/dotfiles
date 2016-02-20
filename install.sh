@@ -28,6 +28,7 @@ sudo apt-get --assume-yes install firefox
 sudo apt-get --assume-yes install gthumb
 sudo apt-get --assume-yes install skype
 sudo apt-get --assume-yes install curl
+sudo apt-get --assume-yes install terminator
 
 # install zsh and oh-my-zsh
 sudo apt-get --assume-yes install zsh
