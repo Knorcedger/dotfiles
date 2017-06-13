@@ -28,7 +28,6 @@ sudo apt-get --assume-yes install firefox
 sudo apt-get --assume-yes install gthumb
 sudo apt-get --assume-yes install skype
 sudo apt-get --assume-yes install curl
-sudo apt-get --assume-yes install terminator
 
 # install zsh and oh-my-zsh
 sudo apt-get --assume-yes install zsh
@@ -59,11 +58,7 @@ sudo ln -s /usr/bin/nodejs /usr/bin/node
 npm install npm -g
 
 # install some npm modules
-npm install -g gulp
-npm install -g cca
-npm install -g bower
-npm install -g node-inspector --unsafe-perm
-npm install -g fixpack
+npm install -g react-native
 npm install -g npm-check-updates
 npm install -g package-json-to-readme
 npm install -g yo
