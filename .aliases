@@ -7,6 +7,7 @@ alias nt='npm test'
 alias ns='npm start'
 alias nit='npm install && npm test'
 alias nf='npm cache clean && rm -rf node_modules && npm install'
+alias rn='react-native'
 
 alias cdd='cd ~/dev'
 alias rdm='readme package.json --tests --travis > README.md'
