@@ -6,7 +6,7 @@ alias nr='npm run'
 alias nt='npm test'
 alias ns='npm start'
 alias nit='npm install && npm test'
-alias nf='rm -rf node_modules && npm install'
+alias nf='npm cache clean -f && rm -rf node_modules && npm install'
 alias rn='react-native'
 
 alias cdd='cd ~/dev'
