@@ -1,5 +1,5 @@
 # Path to your oh-my-zsh installation.
-  export ZSH=/home/knorcedger/.oh-my-zsh
+export ZSH=~/.oh-my-zsh
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -53,12 +53,11 @@ plugins=(git)
 
 # User configuration
 
-  export PATH="/usr/local/heroku/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/home/knorcedger/Android/Sdk/tools:/home/knorcedger/Android/Sdk/platform-tools"
-  export NODE_PATH=$NODE_PATH:/usr/local/lib/node_modules
+export PATH="/usr/local/heroku/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/home/knorcedger/Android/Sdk/tools:/home/knorcedger/Android/Sdk/platform-tools"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
-source $HOME/.aliases
+source $HOME/dev/dotfiles/.aliases
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8

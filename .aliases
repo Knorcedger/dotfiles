@@ -10,4 +10,13 @@ alias nf='npm cache clean -f && rm -rf node_modules && npm install'
 alias rn='react-native'
 
 alias cdd='cd ~/dev'
-alias rdm='readme package.json --tests --travis > README.md'
+
+alias ssh.smart1='ssh root@159.65.24.116'
+alias ssh.smart2='ssh root@178.62.38.16'
+
+alias qb.ssh.nissa='ssh quantumblack@192.168.10.11'
+alias qb.ssh.liliana='ssh quantumblack@192.168.11.168'
+alias qb.ssh.quantumblack.io='ssh root@quantumblack.io'
+alias qb.ssh.nerve-scarlet='ssh root@35.157.216.112'
+alias qb.ssh.nerve-chinook='ssh ubuntu@34.194.203.9'
+alias qb.githubToken='echo "b374318dc541bd99f2726f79b10ffa8f7540b6da"'
