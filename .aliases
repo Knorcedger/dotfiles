@@ -12,7 +12,7 @@ alias rn='react-native'
 alias cdd='cd ~/dev'
 
 alias ssh.smart1='ssh root@159.65.24.116'
-alias ssh.smart2='ssh root@178.62.38.16'
+alias ssh.smart2='ssh root@178.62.38.16 -p 976'
 
 alias qb.ssh.nissa='ssh quantumblack@192.168.10.11'
 alias qb.ssh.liliana='ssh quantumblack@192.168.11.168'
