@@ -35,3 +35,6 @@ alias qb.githubToken='echo "b374318dc541bd99f2726f79b10ffa8f7540b6da"'
 
 alias yo.editorconfig='npx -p yo -p generator-editorconfig -- yo editorconfig'
 alias yo.gitattributes='npx -p yo -p generator-gitattributes -- yo gitattributes'
+alias yo.gitignore='npx -p yo -p generator-gitignore -- yo gitignore'
+
+alias dev.init='git init && npm init && yo.editorconfig && yo.gitattributes && yo.gitignore'
