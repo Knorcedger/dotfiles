@@ -31,6 +31,7 @@ alias qb.ssh.liliana='ssh quantumblack@192.168.11.168'
 alias qb.ssh.quantumblack.io='ssh root@quantumblack.io'
 alias qb.ssh.nerve-scarlet='ssh root@35.157.216.112'
 alias qb.ssh.nerve-chinook='ssh ubuntu@34.194.203.9'
+alias qb.ssh.qb1='ssh ubuntu@ec2-18-232-65-219.compute-1.amazonaws.com'
 alias qb.githubToken='echo "b374318dc541bd99f2726f79b10ffa8f7540b6da"'
 
 alias yo.editorconfig='npx -p yo -p generator-editorconfig -- yo editorconfig'
