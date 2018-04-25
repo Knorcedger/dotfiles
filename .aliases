@@ -7,6 +7,7 @@ alias nt='npm test'
 alias ns='npm start'
 alias nit='npm install && npm test'
 alias nf='npm cache clean -f && rm -rf node_modules && npm install'
+alias nl='npm list --depth=0'
 
 alias cdd='cd ~/dev'
 
@@ -25,7 +26,7 @@ alias ssh.smart12='ssh root@138.68.176.116 -p 991'
 alias ssh.smart13='ssh root@178.62.11.154 -p 973'
 
 alias ssh.mt='ssh flarmio.com@s68464.gridserver.com'
-alias ssh.gcloud_dokku='ssh knorcedger@35.196.233.9'
+alias ssh.gcloud_dokku='ssh achilleas.tsoumitas@35.196.233.9'
 
 alias qb.ssh.nissa='ssh quantumblack@192.168.10.11'
 alias qb.ssh.liliana='ssh quantumblack@192.168.11.168'
