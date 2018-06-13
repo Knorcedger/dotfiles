@@ -51,4 +51,6 @@ alias dib='docker image build . -t'
 alias de='f() { docker container exec -it $1 bash };f'
 alias dc='docker-compose'
 alias dls='docker container ls'
+alias dsa='docker stop $(docker ps -aq)'
+
 alias example='f() { echo Your arg was $1. };f'
