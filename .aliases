@@ -38,7 +38,7 @@ alias qb.ssh.qb1='ssh ubuntu@ec2-34-201-201-217.compute-1.amazonaws.com'
 alias qb.githubToken='echo "b374318dc541bd99f2726f79b10ffa8f7540b6da"'
 
 alias qb.toolkit.docker_stop='docker stop $(docker ps -aq)'
-alias qb.toolkit.rebuild='cdd && cd asset-intelligencetoolkit-database && git pull && ./bin/build.sh && ./bin/run.sh && cd ../asset-intelligencetoolkit-back-end && git pull && npm install && ./bin/docker-build && ./bin/docker-start-dev && cd ../asset-intelligencetoolkit-front-end && git pull && npm install && npm start'
+alias qb.toolkit.rebuild='cdd && cd asset-intelligencetoolkit-database && git pull && ./bin/build.sh && ./bin/run.sh && cd ../asset-intelligencetoolkit-back-end && git pull && npm install && ./bin/docker-build && ./bin/docker-start-dev && cd ../asset-intelligencetoolkit-jira-sync && git pull && npm install && ./bin/docker-build && ./bin/docker-start && cd ../asset-intelligencetoolkit-front-end && git pull && npm install && npm start'
 alias qb.toolkit.all='qb.toolkit.docker_stop && qb.toolkit.rebuild'
 
 alias yo.editorconfig='npx -p yo -p generator-editorconfig -- yo editorconfig'
@@ -46,3 +46,9 @@ alias yo.gitattributes='npx -p yo -p generator-gitattributes -- yo gitattributes
 alias yo.gitignore='npx -p yo -p generator-gitignore -- yo gitignore'
 
 alias dev.init='git init && npm init && yo.editorconfig && yo.gitattributes && yo.gitignore'
+
+alias dib='docker image build . -t'
+alias de='f() { docker container exec -it $1 bash };f'
+alias dc='docker-compose'
+alias dls='docker container ls'
+alias example='f() { echo Your arg was $1. };f'
