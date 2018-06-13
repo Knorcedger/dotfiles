@@ -45,12 +45,19 @@ alias yo.editorconfig='npx -p yo -p generator-editorconfig -- yo editorconfig'
 alias yo.gitattributes='npx -p yo -p generator-gitattributes -- yo gitattributes'
 alias yo.gitignore='npx -p yo -p generator-gitignore -- yo gitignore'
 
-alias dev.init='git init && npm init && yo.editorconfig && yo.gitattributes && yo.gitignore'
+alias dev.init.node='git clone git@github.com:Knorcedger/node-init.git . && rm -rf .git && git init && npm init -y \
+  && ni express body-parser winston \
+  && nisd eslint eslint-config-airbnb-base eslint-plugin-import nodemon \
+  && npx json -I -f package.json -e "this.scripts.start=\"nodemon --inspect --experimental-modules\"" \
+  && npx json -I -f package.json -e "this.scripts.test=\"npm run eslint\"" \
+  && npx json -I -f package.json -e "this.scripts.eslint=\"eslint index.mjs modules/**\""'
 
 alias dib='docker image build . -t'
 alias de='f() { docker container exec -it $1 bash };f'
 alias dc='docker-compose'
 alias dls='docker container ls'
 alias dsa='docker stop $(docker ps -aq)'
+
+alias mkdir='f() { mkdir $1 && cd $1 };f'
 
 alias example='f() { echo Your arg was $1. };f'
