@@ -46,7 +46,7 @@ alias yo.gitattributes='npx -p yo -p generator-gitattributes -- yo gitattributes
 alias yo.gitignore='npx -p yo -p generator-gitignore -- yo gitignore'
 
 alias dev.init.node='git clone git@github.com:Knorcedger/node-init.git . && rm -rf .git && git init && npm init -y \
-  && ni express body-parser winston nconf \
+  && ni express body-parser signale nconf \
   && nisd eslint eslint-config-airbnb-base eslint-plugin-import nodemon \
   && npx json -I -f package.json -e "this.scripts.start=\"nodemon --inspect --experimental-modules\"" \
   && npx json -I -f package.json -e "this.scripts.test=\"npm run eslint\"" \
