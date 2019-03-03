@@ -11,19 +11,8 @@ alias nl='npm list --depth=0'
 
 alias cdd='cd ~/dev'
 
-alias ssh.smart1='ssh root@159.65.24.116'
+alias ssh.smart1='ssh root@159.65.24.116 -p 983'
 alias ssh.smart2='ssh root@178.62.38.16 -p 976'
-alias ssh.smart3='ssh root@138.68.151.90 -p 904'
-alias ssh.smart4='ssh root@138.68.186.38 -p 956'
-alias ssh.smart5='ssh root@138.68.176.192 -p 999'
-alias ssh.smart6='ssh root@138.68.178.197 -p 922'
-alias ssh.smart7='ssh root@138.68.186.5 -p 918'
-alias ssh.smart8='ssh root@138.68.188.195 -p 940'
-alias ssh.smart9='ssh root@138.68.178.99 -p 901'
-alias ssh.smart10='ssh root@138.68.178.247 -p 987'
-alias ssh.smart11='ssh root@178.62.103.203 -p 937'
-alias ssh.smart12='ssh root@138.68.176.116 -p 991'
-alias ssh.smart13='ssh root@178.62.11.154 -p 973'
 
 alias ssh.mt='ssh flarmio.com@s68464.gridserver.com'
 alias ssh.gcloud_dokku='ssh knorcedger@35.196.233.9'
@@ -60,5 +49,6 @@ alias dls='docker container ls'
 alias dsa='docker stop $(docker ps -aq)'
 
 alias mkdir='f() { mkdir $1 && cd $1 };f'
+alias atom='snap run atom'
 
 alias example='f() { echo Your arg was $1. };f'
