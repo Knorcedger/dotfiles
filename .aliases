@@ -49,6 +49,6 @@ alias dls='docker container ls'
 alias dsa='docker stop $(docker ps -aq)'
 
 alias mkdir='f() { mkdir $1 && cd $1 };f'
-alias atom='snap run atom'
+alias code='snap run code'
 
 alias example='f() { echo Your arg was $1. };f'

@@ -10,7 +10,7 @@ sudo add-apt-repository "deb http://archive.canonical.com/ $(lsb_release -sc) pa
 sudo apt-get update
 
 # lets install some ubuntu software
-sudo snap install --classic --assume-yes atom
+sudo snap install --classic --assume-yes vscode
 sudo snap install --classic --assume-yes skype
 sudo apt-get --assume-yes install google-chrome-unstable
 sudo apt-get --assume-yes install git
