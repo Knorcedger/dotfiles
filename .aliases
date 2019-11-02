@@ -1,3 +1,4 @@
+# npm
 alias ni='npm install'
 alias nis='npm install --save'
 alias nisd='npm install --save-dev'
@@ -11,25 +12,12 @@ alias nl='npm list --depth=0'
 
 alias cdd='cd ~/dev'
 
+# ssh
 alias ssh.smart1='ssh root@159.65.24.116 -p 983'
 alias ssh.smart2='ssh root@178.62.38.16 -p 976'
-
-alias ssh.mt='ssh flarmio.com@s68464.gridserver.com'
 alias ssh.gcloud_dokku='ssh knorcedger@35.196.233.9'
-alias qb.ssh.gcloud_dokku='ssh achilleas.tsoumitas@35.196.233.9'
 
-alias qb.ssh.nissa='ssh quantumblack@192.168.10.11'
-alias qb.ssh.liliana='ssh quantumblack@192.168.11.168'
-alias qb.ssh.quantumblack.io='ssh root@quantumblack.io'
-alias qb.ssh.nerve-scarlet='ssh root@35.157.216.112'
-alias qb.ssh.nerve-chinook='ssh ubuntu@34.194.203.9'
-alias qb.ssh.qb1='ssh ubuntu@ec2-34-201-201-217.compute-1.amazonaws.com'
-alias qb.githubToken='echo "b374318dc541bd99f2726f79b10ffa8f7540b6da"'
-
-alias qb.toolkit.docker_stop='docker stop $(docker ps -aq)'
-alias qb.toolkit.rebuild='cdd && cd asset-intelligencetoolkit-database && git pull && ./bin/build.sh && ./bin/run.sh && cd ../asset-intelligencetoolkit-back-end && git pull && npm install && ./bin/docker-build && ./bin/docker-start-dev && cd ../asset-intelligencetoolkit-jira-sync && git pull && npm install && ./bin/docker-build && ./bin/docker-start && cd ../asset-intelligencetoolkit-front-end && git pull && npm install && npm start'
-alias qb.toolkit.all='qb.toolkit.docker_stop && qb.toolkit.rebuild'
-
+# yeoman
 alias yo.editorconfig='npx -p yo -p generator-editorconfig -- yo editorconfig'
 alias yo.gitattributes='npx -p yo -p generator-gitattributes -- yo gitattributes'
 alias yo.gitignore='npx -p yo -p generator-gitignore -- yo gitignore'
@@ -42,12 +30,17 @@ alias dev.init.node='git clone git@github.com:Knorcedger/node-init.git . && rm -
   && npx json -I -f package.json -e "this.scripts.eslint=\"eslint --ignore-path .gitignore ./src/\"" \
   && npx json -I -f package.json -e "this.main=\"src/index.js\""'
 
+# docker
 alias dib='docker image build . -t'
 alias de='f() { docker container exec -it $1 bash };f'
 alias dc='docker-compose'
 alias dls='docker container ls'
 alias dsa='docker stop $(docker ps -aq)'
 
+# android
+alias em='nohup emulator -avd default > /dev/null 2>&1 &'
+
+# various
 alias mkdir='f() { mkdir $1 && cd $1 };f'
 alias code='snap run code'
 
