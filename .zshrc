@@ -53,33 +53,23 @@ plugins=(git zsh-autosuggestions zsh-completions zsh-syntax-highlighting)
 
 # User configuration
 
-export PATH="/usr/local/heroku/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/home/knorcedger/Android/Sdk/tools:/home/knorcedger/Android/Sdk/platform-tools"
-# export MANPATH="/usr/local/man:$MANPATH"
+export NODE_PATH=$NODE_PATH:/usr/local/lib/node_modules
+export ANDROID_SDK=$HOME/Android/Sdk
+export ANDROID_HOME=$HOME/Android/Sdk
+export PATH="/usr/local/heroku/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:$ANDROID_SDK/emulator:$ANDROID_SDK/tools:$ANDROID_SDK/platform-tools"
 
 source $ZSH/oh-my-zsh.sh
 source $HOME/dev/dotfiles/.aliases
 
 # You may need to manually set your language environment
-# export LANG=en_US.UTF-8
+export LANG=en_US.UTF-8
 
-# Preferred editor for local and remote sessions
-# if [[ -n $SSH_CONNECTION ]]; then
-#   export EDITOR='vim'
-# else
-#   export EDITOR='mvim'
-# fi
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" # This loads nvm
 
-# Compilation flags
-# export ARCHFLAGS="-arch x86_64"
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/home/knorcedger/google-cloud-sdk/path.zsh.inc' ]; then . '/home/knorcedger/google-cloud-sdk/path.zsh.inc'; fi
 
-# ssh
-# export SSH_KEY_PATH="~/.ssh/dsa_id"
+# The next line enables shell command completion for gcloud.
+if [ -f '/home/knorcedger/google-cloud-sdk/completion.zsh.inc' ]; then . '/home/knorcedger/google-cloud-sdk/completion.zsh.inc'; fi
 
-# Set personal aliases, overriding those provided by oh-my-zsh libs,
-# plugins, and themes. Aliases can be placed here, though oh-my-zsh
-# users are encouraged to define aliases within the ZSH_CUSTOM folder.
-# For a full list of active aliases, run `alias`.
-#
-# Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
