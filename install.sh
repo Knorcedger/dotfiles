@@ -12,6 +12,7 @@ sudo apt-get update
 # lets install some ubuntu software
 sudo snap install --classic --assume-yes vscode
 sudo snap install --classic --assume-yes skype
+sudo snap install --classic --assume-yes android-studio
 sudo apt-get --assume-yes install google-chrome-unstable
 sudo apt-get --assume-yes install git
 sudo apt-get --assume-yes install filezilla
@@ -39,8 +40,6 @@ git clone https://github.com/Knorcedger/dotfiles
 
 # install nvm
 wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.33.8/install.sh | bash
-
-apm install sync-settings
 
 # restart the pc?
 echo Awesome! Restart the PC now. Do something yourself ffs!
