@@ -21,10 +21,10 @@ sudo echo Your are about to experience magic!
 # sudo apt-get --assume-yes install curl
 
 # install zsh and oh-my-zsh
-sudo apt-get --assume-yes install zsh
-sudo apt-get --assume-yes install git-core
-wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | zsh
-chsh -s `which zsh`
+# sudo apt-get --assume-yes install zsh
+# sudo apt-get --assume-yes install git-core
+# wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | zsh
+# chsh -s `which zsh`
 
 # zsh plugins
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
