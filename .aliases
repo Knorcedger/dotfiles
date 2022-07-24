@@ -12,11 +12,6 @@ alias nl='npm list --depth=0'
 
 alias cdd='cd ~/dev'
 
-# ssh
-alias ssh.smart1='ssh root@159.65.24.116 -p 983'
-alias ssh.smart2='ssh root@178.62.38.16 -p 976'
-alias ssh.gcloud_dokku='ssh knorcedger@35.196.233.9'
-
 # yeoman
 alias yo.editorconfig='npx -p yo -p generator-editorconfig -- yo editorconfig'
 alias yo.gitattributes='npx -p yo -p generator-gitattributes -- yo gitattributes'
