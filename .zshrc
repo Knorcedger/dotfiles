@@ -22,6 +22,7 @@ alias ns='npm start'
 alias nit='npm install && npm test'
 alias nf='npm cache clean -f && rm -rf node_modules && npm install'
 alias nl='npm list --depth=0'
+alias nrd='npm run dev'
 
 alias cdd='cd ~/dev'
 
